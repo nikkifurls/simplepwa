@@ -1,0 +1,226 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Simple PWA</title>
+	<link rel="canonical" href="https://simplepwa.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Icons and Colors -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="./favicon.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" content="./mstile-144x144.png">
+	<meta name="msapplication-config" content="./browserconfig.xml">
+	<meta name="theme-color" content="#000000">
+	
+	<!-- SEO and Social Sharing and SEO -->
+	<meta name="description" content="Simple Progressive Web App (PWA) template" />
+	<meta name="robots" content="noodp" />
+	<meta name="author" content="Nicole Furlan">
+	<meta name="keywords" content="progressive web app, progressive web application, pwa, pwa progressive web app, pwa progressive web application, progressive app, basic progressive web app, basic progressive web application, basic pwa, example progressive web app, example progressive web application, example pwa, progressive web app basic, progressive web app builder, progressive web app example, progressive web app sample, progressive web app template, sample progressive web app, sample progressive web application, sample pwa" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Simple PWA" />
+	<meta property="og:description" content="Simple Progressive Web App (PWA) template" />
+	<meta property="og:url" content="https://simplepwa.com" />
+	<meta property="og:site_name" content="Simple PWA" />
+	<meta property="section:publisher" content="https://www.facebook.com/simplepwa/" />
+	<meta property="og:image" content="https://simplepwa.com/share.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Simple PWA" />
+	<meta name="twitter:description" content="Simple Progressive Web App (PWA) template" />
+	<meta name="twitter:site" content="@simplepwa" />
+	<meta name="twitter:image" content="https://simplepwa.com/share.jpg" />
+	<meta name="twitter:creator" content="@nicolemfurlan" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Javscript -->
+	<script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", () => {
+				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+			});
+		}
+	</script>
+	<script defer src="./main.js"></script>
+ </head>
+
+ <body>
+
+	<header>
+		<div class="container">
+			<a href="./" class="logo" aria-label="Logo">
+				<img src="logo.png" alt="Logo">
+			</a>
+			<h1>Simple Progressive Web App (PWA) template</h1>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<h2 id="what">What is this?</h2>
+			<p>Simple PWA is a Progressive Web App template that provides the minimum file structure needed to create a PWA&#x2014;a <a href="https://web.dev/what-are-pwas/#reliable" target="_blank" rel="nofollow noopener">reliable</a> and <a href="https://web.dev/what-are-pwas/#installable" target="_blank" rel="nofollow noopener">installable</a> web application. It's up to you to build upon it, to make it <a href="https://web.dev/what-are-pwas/#capable" target="_blank" rel="nofollow noopener">capable</a>.
+			<ul>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-36x36.png" target="_blank" rel="nofollow noopener"><code>android-chrome-36x36.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 0.75 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-48x48.png" target="_blank" rel="nofollow noopener"><code>android-chrome-48x48.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 1.0 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-72x72.png" target="_blank" rel="nofollow noopener"><code>android-chrome-72x72.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 1.5 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-96x96.png" target="_blank" rel="nofollow noopener"><code>android-chrome-96x96.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 2.0 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-144x144.png" target="_blank" rel="nofollow noopener"><code>android-chrome-144x144.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 3.0 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-192x192.png" target="_blank" rel="nofollow noopener"><code>android-chrome-192x192.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 4.0 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-256x256.png" target="_blank" rel="nofollow noopener"><code>android-chrome-256x256.png</code></a> <code class="image">image</code> Favicon, Android Chrome M47+ Splash screen with 1.5 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-384x384.png" target="_blank" rel="nofollow noopener"><code>android-chrome-384x384.png</code></a> <code class="image">image</code> Favicon, Android Chrome M47+ Splash screen with 3.0 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-512x512.png" target="_blank" rel="nofollow noopener"><code>android-chrome-512x512.png</code></a> <code class="image">image</code> Favicon, Android Chrome M47+ Splash screen with 4.0 screen density
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon.png</code></a> <code class="image">image</code> Favicon, Apple default
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-57x57.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-57x57.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, non-Retina with iOS6 or prior
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-60x60.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-60x60.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, non-Retina with iOS7
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-72x72.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-72x72.png</code></a> <code class="image">image</code> Favicon, Apple iPad, non-Retina with iOS6 or prior
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-76x76.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-76x76.png</code></a> <code class="image">image</code> Favicon, Apple iPad, non-Retina with iOS7
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-114x114.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-114x114.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, Retina with iOS6 or prior
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-120x120.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-120x120.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, Retina with iOS7
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-144x144.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-144x144.png</code></a> <code class="image">image</code> Favicon, Apple iPad, Retina with iOS6 or prior
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-152x152.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-152x152.png</code></a> <code class="image">image</code> Favicon, Apple iPad, Retina with iOS7
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-180x180.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-180x180.png</code></a> <code class="image">image</code> Favicon, Apple iPhone 6 Plus with iOS8
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/browserconfig.xml" target="_blank" rel="nofollow noopener"><code>browserconfig.xml</code></a> IE11 icon configuration file
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon_config.json" target="_blank" rel="nofollow noopener"><code>favicon_config.json</code></a> <a href="#how" >RealFaviconGenerator</a> configuration file
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon.ico" target="_blank" rel="nofollow noopener"><code>favicon.ico</code></a> <code class="image">image</code> Favicon, IE and fallback for other browsers
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon.png" target="_blank" rel="nofollow noopener"><code>favicon.png</code></a> <code class="image">image</code> Favicon generation source image
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon-16x16.png" target="_blank" rel="nofollow noopener"><code>favicon-16x16.png</code></a> <code class="image">image</code> Favicon, default
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon-32x32.png" target="_blank" rel="nofollow noopener"><code>favicon-32x32.png</code></a> <code class="image">image</code> Favicon, Safari on Mac OS
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/index.html" target="_blank" rel="nofollow noopener"><code>index.html</code></a> Main HTML file
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/logo.png" target="_blank" rel="nofollow noopener"><code>logo.png</code></a> <code class="image">image</code> Logo
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/main.js" target="_blank" rel="nofollow noopener"><code>main.js</code></a> Main Javascript file
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/manifest.json" target="_blank" rel="nofollow noopener"><code>manifest.json</code></a> <a href="https://web.dev/add-manifest/" target="_blank" rel="nofollow noopener">Manifest file</a>
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/maskable_icon.png" target="_blank" rel="nofollow noopener"><code>maskable_icon.png</code></a> <code class="image">image</code> Favicon, <a href="https://web.dev/maskable-icon" target="_blank" rel="nofollow noopener">maskable</a>
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-70x70.png" target="_blank" rel="nofollow noopener"><code>mstile-70x70.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-144x144.png" target="_blank" rel="nofollow noopener"><code>mstile-144x144.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE10
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-150x150.png" target="_blank" rel="nofollow noopener"><code>mstile-150x150.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-310x150.png" target="_blank" rel="nofollow noopener"><code>mstile-310x150.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-310x310.png" target="_blank" rel="nofollow noopener"><code>mstile-310x310.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/README.md" target="_blank" rel="nofollow noopener"><code>README.md</code></a> Readme file
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/safari-pinned-tab.svg" target="_blank" rel="nofollow noopener"><code>safari-pinned-tab.svg</code></a> <code class="image">image</code> Favicon, Safari pinned tab
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/share.jpg" target="_blank" rel="nofollow noopener"><code>share.jpg</code></a> <code class="image">image</code> Social media sharing
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/sw.js" target="_blank" rel="nofollow noopener"><code>sw.js</code></a> Service worker file
+				</li>
+				<li>
+					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/style.css" target="_blank" rel="nofollow noopener"><code>style.css</code></a> Main CSS file
+				</li>
+			</ul>
+			<h2 class="how">How do I use it?</h2>
+			<ol>
+				<li>Clone the repository from <a href="https://github.com/nikkifurls/simple-pwa" target="_blank" rel="noopener">GitHub</a>.</li>
+				<li>Create all favicon images using <a href="https://realfavicongenerator.net" target="_blank" rel="nofollow noopener">RealFaviconGenerator</a> and replace existing images with generated images.
+					<p>If you're able to install the CLI version of <strong>RealFaviconGenerator</strong>, <code>favicon_config.json</code> contains all settings to generate these images using the following command from the project's root directory. The <code>real-favicon</code> tool generates images from <code>favicon.png</code>, so replace <code>favicon.png</code> prior to running this command. The resulting <code>favicon_data.json</code> and <code>site.webmanifest</code> can be discarded.</p>
+					<p><code>real-favicon generate favicon_config.json favicon_data.json .</code></p>
+				</li>
+				<li>Create new maskable icon using <a href="https://maskable.app" target="_blank" rel="nofollow noopener">Maskable.app</a> and replace <code>maskable_icon.png</code>.</li>
+				<li>Create new 1200x630 share image and replace <code>share.jpg</code>.</li>
+				<li>Build upon the PWA by adding HTML, CSS, and Javascript.</li>
+			</ol>
+			<h2 class="more">Where can I find other PWAs?</h2>
+			<p>Looking for inspiration? Check out these PWA directories:</p>
+			<ul>
+				<li><a href="https://pwainside.com/" target="_blank" rel="noopener nofollow">PWA Inside</a></li>
+				<li><a href="https://appsco.pe/" target="_blank" rel="noopener nofollow">Appscope</a></li>
+				<li><a href="https://progressiveapp.store/" target="_blank" rel="noopener nofollow">Progressive App Store</a></li>
+				<li><a href="https://pwa-directory.appspot.com/" target="_blank" rel="noopener nofollow">PWA Directory</a></li>
+			</ul>
+			<h2 class="help">Can I contribute?</h2>
+			<p>Want to help improve this? Contributions are welcome! <span class="icon heart" role="img" aria-label="Heart">&#x27A1;&#xFE0F;</span> <a href="https://github.com/nikkifurls/simple-pwa" target="_blank" rel="nofollow noopener">GitHub</a></p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>If you find this useful, please share it, and if you can, support me directly on <a href="https://patreon.com/nicolefurlan" target="_blank" rel="noopener nofollow">Patreon</a> or <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FACW2AMWGLZ6S&source=url" target="_blank" rel="noopener nofollow">Paypal</a>. Your support is greatly appreciated! <span class="icon heart" role="img" aria-label="Heart">&#x2764;</span></p>
+		</div>
+	</footer>
+
+ </body>
+
+ </html>
