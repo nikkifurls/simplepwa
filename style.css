@@ -65,16 +65,12 @@ a {
 	font-weight: bold;
 }
 
-a:hover {
+a:hover, a:active {
 	color: mediumaquamarine;
 }
 
-code a {
+a code {
 	color: black;
-}
-
-code a:hover {
-	color: mediumaquamarine;
 }
 
 code {

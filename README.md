@@ -3,6 +3,9 @@
 
 ### What is this?
 Simple PWA is a Progressive Web App template that provides the minimum file structure needed to create a PWA. These files collectively represent a [reliable](https://web.dev/what-are-pwas/#reliable) and [installable](https://web.dev/what-are-pwas/#installable) web application. It's up to you to add functionality to make it [capable](https://web.dev/what-are-pwas/#capable).
+
+Simple PWA is "offline-first", using a ["cache falling back to the network"](https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker#cache_falling_back_to_the_network) caching strategy, which means any files specified in [`sw.js`](https://github.com/nikkifurls/simple-pwa/blob/master/sw.js#L10-L46) will be cached, and therefore, accessible offline. Non-cached requests (including non-GET requests, as they cannot be cached), will not be accessible offline, and instead, will ping the network or fail if there is no network available. In [`sw.js`](https://github.com/nikkifurls/simple-pwa/blob/master/sw.js), the value of [`cacheName`](https://github.com/nikkifurls/simple-pwa/blob/master/sw.js#L1) should be changed whenever the app is updated in order to force the cache to update from the network.
+
 - `android-chrome-36x36.png` Favicon, Android Chrome M39+ with 0.75 screen density
 - `android-chrome-48x48.png` Favicon, Android Chrome M39+ with 1.0 screen density
 - `android-chrome-72x72.png` Favicon, Android Chrome M39+ with 1.5 screen density
@@ -53,9 +56,10 @@ Simple PWA is a Progressive Web App template that provides the minimum file stru
 	
 	`real-favicon generate favicon_config.json favicon_data.json .`
 
-3. Create new maskable icon using [Maskable.app](https://maskable.app) and replace `maskable_icon.png`.
-4. Create new 1200x630 share image and replace `share.jpg`.
-5. Build your PWA by adding HTML, CSS, and Javascript.
+3. Create new 650x650 maskable icon using [Maskable.app](https://maskable.app) and replace `maskable_icon.png`.
+4. Create new black vector icon using [`Manytools' colorize images tool`](http://manytools.org/image/colorize-filter) and replace [`safari-pinned-tab.svg`](https://github.com/nikkifurls/simple-pwa/blob/master/safari-pinned-tab.svg).
+5. Create new 1200x630 share image and replace `share.jpg`.
+6. Build your PWA by adding HTML, CSS, and Javascript.
 
 ### Can I contribute?
 
