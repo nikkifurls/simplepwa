@@ -1,27 +1,17 @@
-html {
+html, body {
 	background-color: black;
 	color: white;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
 	margin: 0 auto;
 	max-width: 768px;
-	padding: 20px 0;
-}
-
-@media all and (max-width: 768px) {
-	.container {
-		padding: 15px 3%;
-	}
-}
-
-@media all and (max-width: 479px) {
-	.container {
-		padding: 10px 1%;
-	}
+	padding: 20px 5%;
 }
 
 section {
@@ -29,11 +19,16 @@ section {
 }
 
 h1, h2 {
+	line-height: 1;
 	text-transform: uppercase;
 }
 
 h2 {
 	margin-top: 40px;
+}
+
+h2:first-of-type {
+	margin-top: 20px;
 }
 
 .logo {
