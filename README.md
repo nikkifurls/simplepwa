@@ -42,8 +42,10 @@ Simple PWA is "offline-first", using a ["cache falling back to the network"](htt
 - `mstile-310x150.png` Favicon, Windows 8 / IE11
 - `mstile-310x310.png` Favicon, Windows 8 / IE11
 - `README.md` Readme file
+- `robots.txt` Robots file
 - `safari-pinned-tab.svg` Favicon, Safari pinned tab
 - `share.jpg` Social media sharing
+- `sitemap.xml` Sitemap file
 - `sw.js` Service worker file
 - `style.css` Main CSS file
 
